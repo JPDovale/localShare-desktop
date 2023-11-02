@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Cinzel_Decorative';
+  src: url('../assets/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Uncial_Antiqua';
+  src: url('../assets/fonts/Uncial_Antiqua/UncialAntiqua-Regular.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  scrollbar-width: thin;
+  scrollbar-color: #8d5df1 #101012;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #1f1f25;
+  transition: 'ease-in-out 300ms';
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #101012;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #101012;
+}
+
+*::-webkit-scrollbar-thumb {
+  transition: 'ease-in-out 300ms';
+  border-radius: 5px;
+  background-color: #8d5df1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #5729ba;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #5729ba;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+span {
+  display: block;
+}
+
+input,
+textarea,
+select,
+button,
+span,
+a {
+  font-family: 'Roboto';
+}

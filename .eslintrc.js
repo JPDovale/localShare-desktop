@@ -3,15 +3,20 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     // A temporary hack related to IDE not resolving correct package.json
-    'import/no-extraneous-dependencies': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-import-module-exports': 'off',
+    'import/prefer-default-export': 'off',
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
     'no-unused-vars': 'off',
+    'no-new': 'off',
+    'no-console': 'off',
+    'promise/always-return': 'off',
+    'global-require': 'off',
+    '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
   },
   parserOptions: {

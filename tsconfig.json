@@ -5,6 +5,7 @@
     "module": "commonjs",
     "lib": ["dom", "es2022"],
     "jsx": "react-jsx",
+    "baseUrl": "./",
     "strict": true,
     "sourceMap": true,
     "moduleResolution": "node",
@@ -12,7 +13,63 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "allowJs": true,
-    "outDir": ".erb/dll"
+    "outDir": ".erb/dll",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@@types/*": [
+        "./src/@types/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@env/*": [
+        "./src/env/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@database/*": [
+        "./src/database/*"
+      ],
+      "@providers/*": [
+        "./src/providers/*"
+      ],
+      "@tests/*": [
+        "./src/tests/*"
+      ]
+    },
   },
   "exclude": ["test", "release/build", "release/app/dist", ".erb/dll"]
 }
