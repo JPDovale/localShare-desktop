@@ -1,5 +1,5 @@
+import './server';
 import { app, ipcMain } from 'electron';
-import { server } from './server';
 import { Window } from './electron/Window';
 
 const { mainWindow } = Window;
@@ -12,15 +12,6 @@ if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
   sourceMapSupport.install();
 }
-
-app.on('window-all-closed', () => {
-  server.closeAllConnections();
-  server.close();
-
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
-});
 
 app
   .whenReady()
